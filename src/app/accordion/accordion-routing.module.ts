@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AccordionComponent } from './accordion.component';
 
 const accordionRoutes: Routes = [
-    { path: 'accordion', component: AccordionComponent }
+    { path: '', component: AccordionComponent }
 ];
 
 @NgModule({

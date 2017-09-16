@@ -5,8 +5,6 @@ import { MaterializeModule } from 'angular2-materialize';
 
 
 import { AppRoutingModule } from './app-routing.module';
-import { AccordionModule } from './accordion/accordion.module';
-import { CarouselModule } from './carousel/carousel.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -20,9 +18,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterializeModule,
-    AccordionModule,
-    CarouselModule
+    MaterializeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

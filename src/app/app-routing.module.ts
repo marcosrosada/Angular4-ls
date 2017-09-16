@@ -4,7 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
 const appRouter: Routes = [
-    { path: '', component: HomeComponent }
+    { path: '', component: HomeComponent },
+    { path: 'accordion', loadChildren: 'app/accordion/accordion.module#AccordionModule' },
+    { path: 'carousel', loadChildren: 'app/carousel/carousel.module#CarouselModule' }
 ];
 
 @NgModule({

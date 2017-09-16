@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CarouselComponent } from './carousel.component';
 
 const carouselRoutes: Routes = [
-    { path: 'carousel', component: CarouselComponent }
+    { path: '', component: CarouselComponent }
 ];
 
 @NgModule({
