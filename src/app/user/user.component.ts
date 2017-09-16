@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Validators, FormControl, FormGroup, FormBuilder } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'user',
@@ -15,9 +15,9 @@ export class UserComponent implements OnInit {
   ngOnInit() {
   }
   
-  onSubmit(form) {
+  onSubmit(formUser) {
     console.log('From User', this.user);
-    console.log('From Form', form);
+    console.log('From Form', formUser.value);
   }
 
 }

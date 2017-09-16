@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import {AccordionModule} from 'primeng/primeng';
+import { AccordionModule } from 'primeng/primeng';
+import { InputTextModule } from 'primeng/primeng';
+import { ButtonModule } from 'primeng/primeng';
+import { CalendarModule } from 'primeng/primeng';
 
 import { AccordionRoutingModule } from './accordion-routing.module';
 import { AccordionComponent } from './accordion.component';
@@ -13,7 +16,10 @@ import { UserComponent } from './../user/user.component';
     CommonModule,
     FormsModule,
     AccordionRoutingModule,
-    AccordionModule
+    AccordionModule,
+    InputTextModule,
+    ButtonModule,
+    CalendarModule
   ],
   declarations: [
     AccordionComponent,
