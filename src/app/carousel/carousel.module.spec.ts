@@ -1,13 +1,13 @@
 import { CarouselModule } from './carousel.module';
 
 describe('CarouselModule', () => {
-  let carouselModule: CarouselModule;
+  let CarouselModule: CarouselModule;
 
   beforeEach(() => {
-    carouselModule = new CarouselModule();
+    CarouselModule = new CarouselModule();
   });
 
   it('should create an instance', () => {
-    expect(carouselModule).toBeTruthy();
+    expect(CarouselModule).toBeTruthy();
   });
 });

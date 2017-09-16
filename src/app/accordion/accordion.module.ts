@@ -1,34 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AccordionModule } from 'primeng/primeng';
-import { InputTextModule } from 'primeng/primeng';
-import { ButtonModule } from 'primeng/primeng';
-import { CalendarModule } from 'primeng/primeng';
 
+import { SharedModule } from './../shared/module/shared/shared.module';
 import { AccordionRoutingModule } from './accordion-routing.module';
 import { AccordionComponent } from './accordion.component';
-import { UserComponent } from './../user/user.component';
-import { MessageComponent } from './../message/message.component';
 import { RestService } from './../shared/service/rest/rest.service';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     HttpModule,
-    AccordionRoutingModule,
+    SharedModule,
     AccordionModule,
-    InputTextModule,
-    ButtonModule,
-    CalendarModule
+    AccordionRoutingModule
   ],
   declarations: [
-    AccordionComponent,
-    UserComponent,
-    MessageComponent
+    AccordionComponent
   ],
   providers: [
     RestService

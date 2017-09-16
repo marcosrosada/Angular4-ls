@@ -13,10 +13,11 @@ export class MessageComponent implements OnInit {
   constructor(private _restService: RestService) { }
 
   ngOnInit() {
+    // This is a MOCK message just to test in the view. Should be delete
+    this.message = "Congrats. You've managed to do the api call!"
+    
     this._restService.get('api/test')
         .subscribe(data => this.message = data.value);
-      
-    this.message = "Congrats. You've managed to do the api call!"
   }
 
 }

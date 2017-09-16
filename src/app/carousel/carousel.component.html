@@ -1,3 +1,32 @@
-<p>
-  carousel works!
-</p>
+<section>
+  <article>
+    <nav class="clean">
+      <div class="nav-wrapper">
+        <div class="col s6">
+          <a routerLink="/" class="breadcrumb">
+                  <i class="material-icons">home</i> Home
+              </a>
+          <a class="breadcrumb active">
+                Carousel
+              </a>
+        </div>
+      </div>
+    </nav>
+
+    <h5>Carousel component</h5>
+  </article>
+</section>
+
+<div materialize="carousel" [materializeParams]="[{full_width: true}]" class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-item red white-text" href="#one!">
+        <h2>First Panel</h2>
+        <p class="white-text">This is your first panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#two!">
+        <user></user>
+        Teste
+    </div>
+    <div class="carousel-item blue white-text" href="#three!">
+        <message></message>
+    </div>
+</div>
