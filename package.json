@@ -1,6 +1,13 @@
 {
   "name": "lottostarlet",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Lottostar24Test",
+  "author": "Marcos Rosada <marcosfrosada@gmail.com>",
+  "keywords": [
+    "Angular",
+    "ECMAScript2015",
+    "Typescript"
+  ],
   "license": "MIT",
   "scripts": {
     "ng": "ng",

@@ -12,15 +12,17 @@
           </div>
         </div>
       </nav>
-      <h4 class="mar-t-0">Accordion component</h4>
+
+      <h5>Accordion component</h5>
   </article>
 </section>
 
 <p-accordion>
-  <p-accordionTab header="USER FORM" [selected]="true">
+  <p-accordionTab header="USER FORM" >
      <user></user>
   </p-accordionTab>
-  <p-accordionTab header="GET A MESSAGE">
-      Content 2
+
+  <p-accordionTab header="GET A MESSAGE" [selected]="true">
+      <message></message>
   </p-accordionTab>
 </p-accordion>
