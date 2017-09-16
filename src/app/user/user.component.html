@@ -1,0 +1,32 @@
+<div class="row">
+  <form #formUser="ngForm" class="col s12" >
+    <div class="row">
+      <div class="input-field col s12 ">
+        <input pInputText type="text" formControlName="firstname" placeholder="Required" [ngModel]="user.firstName" #firstName="ngModel" required/>
+      </div>
+    </div>
+    
+    <div class="row mar-t-15">
+      <div class="input-field col s12 ">
+        <input type="text" id="tx_lastName" name="lastName" class="mar-b-0" [ngModel]="user.lastName" #lastName="ngModel" required>
+        <label class="active" for="tx_lastName">Last Name</label>
+      </div>
+    </div>
+    
+    <div class="row mar-t-15">
+      <div class="input-field col s12 ">
+        <input type="email" id="tx_email" name="email" class="mar-b-0" [ngModel]="user.email" #email="ngModel" required>
+        <label class="active" for="tx_email">E-mail</label>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="col s2 mar-t-15">
+  <button class="btn waves-effect waves-light blue-grey darken-4" type="button" 
+        [disabled]="!formUser.valid" 
+        (click)="onSubmit(formUser)" >
+    Salvar
+  </button>
+</div>

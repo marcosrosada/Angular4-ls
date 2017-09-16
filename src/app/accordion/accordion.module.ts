@@ -1,16 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import {AccordionModule} from 'primeng/primeng';
 
 import { AccordionRoutingModule } from './accordion-routing.module';
 import { AccordionComponent } from './accordion.component';
+import { UserComponent } from './../user/user.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    AccordionRoutingModule
+    FormsModule,
+    AccordionRoutingModule,
+    AccordionModule
   ],
   declarations: [
-    AccordionComponent
+    AccordionComponent,
+    UserComponent
   ]
 })
-export class AccordionModule { }
+// I decided to add 'My' prefix before the name module to haven't conflit with AccordionModule from PrimeNG
+export class MyAccordionModule { }

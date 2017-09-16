@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 
 const appRouter: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'accordion', loadChildren: 'app/accordion/accordion.module#AccordionModule' },
+    { path: 'accordion', loadChildren: 'app/accordion/accordion.module#MyAccordionModule' },
     { path: 'carousel', loadChildren: 'app/carousel/carousel.module#CarouselModule' }
 ];
 

@@ -1,13 +1,13 @@
-import { AccordionModule } from './accordion.module';
+import { MyAccordionModule } from './accordion.module';
 
-describe('AccordionModule', () => {
-  let accordionModule: AccordionModule;
+describe('MyAccordionModule', () => {
+  let MyAccordionModule: MyAccordionModule;
 
   beforeEach(() => {
-    accordionModule = new AccordionModule();
+    MyAccordionModule = new MyAccordionModule();
   });
 
   it('should create an instance', () => {
-    expect(accordionModule).toBeTruthy();
+    expect(MyAccordionModule).toBeTruthy();
   });
 });
