@@ -9,7 +9,6 @@ import { CalendarModule } from 'primeng/primeng';
 import { SharedModule } from './../shared/module/shared/shared.module';
 import { CarouselRoutingModule } from './carousel-routing.module';
 import { CarouselComponent } from './carousel.component';
-import { RestService } from './../shared/service/rest/rest.service';
 
 
 @NgModule({
@@ -24,9 +23,6 @@ import { RestService } from './../shared/service/rest/rest.service';
   ],
   declarations: [
     CarouselComponent
-  ],
-  providers: [
-    RestService
   ]
 })
 export class CarouselModule { }

@@ -7,7 +7,6 @@ import { AccordionModule } from 'primeng/primeng';
 import { SharedModule } from './../shared/module/shared/shared.module';
 import { AccordionRoutingModule } from './accordion-routing.module';
 import { AccordionComponent } from './accordion.component';
-import { RestService } from './../shared/service/rest/rest.service';
 
 @NgModule({
   imports: [
@@ -19,9 +18,6 @@ import { RestService } from './../shared/service/rest/rest.service';
   ],
   declarations: [
     AccordionComponent
-  ],
-  providers: [
-    RestService
   ]
 })
 // I decided to add 'My' prefix before the name module to haven't conflit with AccordionModule from PrimeNG

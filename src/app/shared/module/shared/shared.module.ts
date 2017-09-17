@@ -6,6 +6,7 @@ import { CalendarModule } from 'primeng/primeng';
 
 import { UserComponent } from './../../../user/user.component';
 import { MessageComponent } from './../../../message/message.component';
+import { RestService } from './../../../shared/service/rest/rest.service';
 
 @NgModule({
   imports: [
@@ -20,6 +21,9 @@ import { MessageComponent } from './../../../message/message.component';
   exports: [
     UserComponent,
     MessageComponent
+  ],
+  providers: [
+    RestService
   ]
 })
 export class SharedModule { }
