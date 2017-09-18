@@ -19,22 +19,21 @@
 
 <div class="row">
   <div class="col s12 m12">
-    <div materialize="carousel" [materializeParams]="[{dist: 0}]" class="carousel carousel-slider">
-      <!-- <div class="carousel-fixed-item center">
-        <a class="btn waves-effect white grey-text darken-text-2">Next</a>
-      </div> -->
+    <div materialize="carousel" [materializeParams]="[{dist: 0, indicators: true}]" class="carousel carousel-slider">
       <div class="carousel-item" href="#one!">
         <img src="https://lorempixel.com/580/250/nature/5" class="responsive-img">
       </div>
       <div class="carousel-item" href="#two!">
-        <div class="carousel-user">
+        <div class="item">
           <h5>USER FORM</h5>
           <user></user>
         </div>
       </div>
       <div class="carousel-item" href="#three!">
-        <h5>GET A MESSAGE</h5>
-        <message></message>
+        <div class="item">
+          <h5>GET A MESSAGE</h5>
+          <message></message>
+        </div>
       </div>
     </div>
   </div>

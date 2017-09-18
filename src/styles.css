@@ -24,3 +24,11 @@ nav.clean .breadcrumb .material-icons{
     height: 40px;
     padding-right: 5px;
 }
+
+.carousel .indicators {
+    position: initial;
+    margin: -10px;
+    background: #444;
+    opacity: 0.6;
+    height: 40px;
+}
